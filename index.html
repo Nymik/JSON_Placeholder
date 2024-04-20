@@ -3,23 +3,40 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="output.css" />
     <title>Document</title>
   </head>
-  <body>
-    <!-- Create form for user to get post number to fecth -->
-    <form id="form">
-      <input type="number" id="postNumber" placeholder="Enter post number" />
-      <button type="submit" id="postSubmitBtn">Get Post</button>
-
-      <!-- Diplay post information - Userd ID, post title, post body  -->
-        <div id="output">
-            <h2>User ID: <span id="postUserId"></span></h2>
-            <h2>Post ID:<span id='postID'> </span> </h2>
-            <h2>Title: <span id="postTitle"></span></h2>
-            <p id="postBody">body text</p>
-
-        </div>
+  <body class="bg-cyan-700 text-white">
+    <form class="w-full max-w-sm">
+      <div class="flex items-center border-b border-teal-500 py-2">
+        <input
+          id="postNumber"
+          class="appearance-none bg-transparent border-none w-full text-white mr-3 py-1 px-2 leading-tight focus:outline-none"
+          type="number"
+          placeholder="Post number"
+          aria-label="Full name"
+        />
+        <button
+          id="postSubmitBtn"
+          class="flex-shrink-0 bg-teal-500 hover:bg-teal-700 border-teal-500 hover:border-teal-700 text-sm border-4 text-white py-1 px-2 rounded"
+          type="button"
+        >
+          Get post
+        </button>
+      </div>
+      <div id="output">
+        <h2 class="text-4xl font-extrabold">
+          User ID: <span id="postUserId"></span>
+        </h2>
+        <h2 class="text-4xl font-extrabold">
+          Post ID: <span id="postID"> </span>
+        </h2>
+        <h2 class="text-4xl font-extrabold">
+          Title: <span id="postTitle"></span>
+        </h2>
+        <p id="postBody" class=""></p>
+      </div>
+    </form>
 
     <script src="script.js"></script>
   </body>
