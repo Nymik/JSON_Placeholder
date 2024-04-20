@@ -7,6 +7,20 @@
     <title>Document</title>
   </head>
   <body>
+    <!-- Create form for user to get post number to fecth -->
+    <form id="form">
+      <input type="number" id="postNumber" placeholder="Enter post number" />
+      <button type="submit" id="postSubmitBtn">Get Post</button>
+
+      <!-- Diplay post information - Userd ID, post title, post body  -->
+        <div id="output">
+            <h2>User ID: <span id="postUserId"></span></h2>
+            <h2>Post ID:<span id='postID'> </span> </h2>
+            <h2>Title: <span id="postTitle"></span></h2>
+            <p id="postBody">body text</p>
+
+        </div>
+
     <script src="script.js"></script>
   </body>
 </html>
