@@ -7,11 +7,13 @@
     <title>Document</title>
   </head>
   <body class="bg-cyan-700 text-white">
-    <form class="w-full max-w-sm">
-      <div class="flex items-center border-b border-teal-500 py-2">
+    <form class="">
+      <div
+        class="flex flex-col items-center justify-center border-b border-teal-500 gap-5 mt-12"
+      >
         <input
           id="postNumber"
-          class="appearance-none bg-transparent border-none w-full text-white mr-3 py-1 px-2 leading-tight focus:outline-none"
+          class="appearance-none bg-transparent border-2 p-2 rounded text-white leading-tight focus:outline-none"
           type="number"
           placeholder="Post number"
           aria-label="Full name"
@@ -23,19 +25,36 @@
         >
           Get post
         </button>
+        <div id="output" class="border-4 rounded w-1/2 w-fit">
+          <h2 class="text-4xl font-extrabold m-10">
+            User ID: <span id="postUserId"></span>
+          </h2>
+          <h2 class="text-4xl font-extrabold m-10">
+            Post ID: <span id="postID"> </span>
+          </h2>
+          <h2 class="text-4xl font-extrabold m-10">
+            Title: <span id="postTitle"></span>
+          </h2>
+          <p id="postBody" class="m-10"></p>
+        </div>
       </div>
-      <div id="output">
-        <h2 class="text-4xl font-extrabold">
-          User ID: <span id="postUserId"></span>
-        </h2>
-        <h2 class="text-4xl font-extrabold">
-          Post ID: <span id="postID"> </span>
-        </h2>
-        <h2 class="text-4xl font-extrabold">
-          Title: <span id="postTitle"></span>
-        </h2>
-        <p id="postBody" class=""></p>
-      </div>
+
+      <!--  <div class="border-b border-teal-500 py-2">
+        <input
+          id="postNumber"
+          class="appearance-none bg-transparent border-2 rounded w-full text-white mr-3 py-1 px-2 leading-tight focus:outline-none"
+          type="number"
+          placeholder="Post number"
+          aria-label="Full name"
+        />
+        <button
+          id="postSubmitBtn"
+          class="bg-teal-500 hover:bg-teal-700 border-teal-500 hover:border-teal-700 border-4 font-bold text-white py-1 px-2 rounded flex-grow"
+          type="button"
+        >
+          Get post
+        </button>
+      </div> -->
     </form>
 
     <script src="script.js"></script>
